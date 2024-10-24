@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/recomen.png" type="image/x-icon">
+    <title>Recomendando Pelis</title>
+</head>
+<body>
+    <div id="logo" class="logo">
+        <img src="imagenes/recomendado.png" alt="Logo"> <!-- Cambia la ruta por la de tu logo -->
+    </div>
+    <button id="exitButton" class="exit-button" style="display: none;">Salir</button> <!-- Botón "Salir" -->
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Formulario de Usuario</h2>
+            <form id="userForm">
+                <div class="form-field">
+                    <label for="name">Nombre:</label>
+                </div>
+                <div><input type="text" id="name" required></div>
+    
+                <div class="form-field">
+                    <label for="dob">Fecha de Nacimiento:</label>
+                    <input type="date" id="dob" required>
+                </div>
+    
+                <div class="form-field">
+                    <label for="years">Años:</label>
+                    <select id="years" required>
+                        <option value="1900-1950">1900-1950</option>
+                        <option value="1950-1980">1950-1980</option>
+                        <option value="1980-2000">1980-2000</option>
+                        <option value="2000-2100">2000-2100</option>
+                        <option value="2010-2024">2010-2024</option>
+                        <option value="Todo">Todo</option>
+                    </select>
+                </div>
+    
+                <div class="form-field">
+                    <label for="genres">Géneros:</label>
+                    <select id="genres" required>
+                        <option value="28">Acción</option>
+                        <option value="16">Animación</option>
+                        <option value="12">Aventura</option>
+                        <option value="35">Comedia</option>
+                        <option value="99">Documental</option>
+                        <option value="10749">Erótico</option>
+                        <option value="53">Suspenso</option>
+                        <option value="27">Terror</option>
+                    </select>
+                </div>
+                
+                <div class="form-field">
+                    <label>Idiomas:</label>
+                    <div>
+                        <label><input type="checkbox" name="language" value="es"> Español</label>
+                        <label><input type="checkbox" name="language" value="en"> Inglés</label>
+                        <label><input type="checkbox" name="language" value="pt"> Portugués</label>
+                        <label><input type="checkbox" name="language" value="it"> Italiano</label>
+                        <label><input type="checkbox" name="language" value="de"> Alemán</label>
+                        <label><input type="checkbox" name="language" value="zh"> Chino</label>
+                    </div>
+                </div>
+    
+                <button type="submit" aria-label="Aceptar">Aceptar</button>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="title-container" id="recommendationTitle">
+        <h1>Recomendaciones para ti</h1>
+        <button id="exitButton" class="exit-button" style="display: none;">Salir</button>
+    </div>
+    <div class="bento-container" id="recommendationsGrid"></div>
+    <div id="ageWarningModal" class="modal">
+        <div class="modal-content">
+            <h2>Advertencia</h2>
+            <p>Debes estar supervisado por un adulto.</p>
+            <button id="closeWarning">Cerrar</button>
+        </div>
+    </div>
+    
+                
+    
+    <script src="script.js"></script>
+</body>
+</html>
