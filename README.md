@@ -33,3 +33,15 @@
 1. Cloná este repositorio:
 ```bash
 git clone https://github.com/frantissera01/movierecommen.git
+
+## 👨‍💻 Autor
+
+**Franco J. Tissera G.**  
+Técnico Superior en Desarrollo de Software  
+📍 Villa Carlos Paz, Córdoba  
+🔗 [GitHub](https://github.com/frantissera01)  
+
+---
+
+> Este proyecto forma parte de mi portfolio profesional para aplicar a oportunidades en el área de IT, tanto en Argentina como en el exterior.
+
